@@ -10986,26 +10986,14 @@ footer.footer .social-link {
   transition: background-color 0.15s ease-in-out;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
-footer.footer .social-link:hover {
-  background-color: #155d74;
+.footer {
+  background-color: #eebf20;
   text-decoration: none;
 }
 
-.map {
-  height: 30rem;
-}
-.map iframe {
-  pointer-events: none;
-  height: 100%;
-  width: 100%;
-  border: 0;
-}
 
-@media (max-width: 992px) {
-  .map {
-    height: 75%;
-  }
-}
+
+
 .masthead {
   min-height: 30rem;
   position: relative;
@@ -11107,4 +11095,110 @@ footer.footer .social-link:hover {
   line-height: 7.5rem;
   font-size: 2.25rem;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos generales para el formulario */
+.body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0; /* Eliminar márgenes predeterminados */
+  height: 100vh; /* Altura de la ventana completa */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor del formulario que ocupa toda la pantalla */
+.map {
+  height: 100vh; /* Altura completa de la ventana */
+  width: 100%; /* Ancho completo de la ventana */
+  display: flex; /* Usar flexbox para centrar el contenido */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  padding: 20px; /* Espacio alrededor para evitar que el formulario toque los bordes */
+}
+
+/* Estilos del contenedor del formulario */
+.form-container {
+  text-align: center;
+  max-width: 600px; /* Puedes ajustar esto si deseas un ancho máximo */
+  width: 100%; /* Ancho completo para el contenedor del formulario */
+  background-color: #ffffff;
+  padding: 30px; /* Más padding para un diseño más espacioso */
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos del título */
+.form-container h2 {
+  color: #9e6b0b;
+  font-size: 14px;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.form-container h1 {
+  color: #6a0dad;
+  font-size: 24px;
+  margin: 10px 0 20px;
+}
+
+/* Estilos de los campos del formulario */
+.form-container input,
+.form-container textarea {
+  width: 100%; /* Campos ocupan todo el ancho del contenedor */
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.form-container textarea {
+  resize: none;
+  height: 100px;
+}
+
+/* Botón de envío con degradado */
+.form-container button {
+  width: 100%; /* Botón ocupa todo el ancho del contenedor */
+  padding: 12px;
+  margin-top: 15px;
+  font-size: 16px;
+  color: #fff;
+  background: linear-gradient(90deg, #6200ea, #00d4ff);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-container button:hover {
+  background: linear-gradient(90deg, #00d4ff, #6200ea);
+}
+
+.profile-pic {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para la foto */
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #7B2CBF, #2A9D8F); /* Cambia estos colores al degradado que desees */
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 30px; /* Bordes redondeados */
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: scale(1.05); /* Efecto de agrandamiento al hacer hover */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada al hacer hover */
 }
